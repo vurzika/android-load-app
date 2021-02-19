@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="normalText" format="string" />
+        <attr name="normalBackground" format="color|reference" />
+
+        <attr name="loadingText" format="string" />
+        <attr name="loadingBackground" format="color|reference" />
+
+        <attr name="circleColor" format="color|reference" />
+
+        <attr name="progress" format="integer" />
+
+        <attr name="animationDuration" format="integer" />s
+    </declare-styleable>
+</resources>

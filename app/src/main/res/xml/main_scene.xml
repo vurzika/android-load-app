@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Define a Transition -->
+    <!-- A transition describes an animation via start and end state -->
+    <Transition
+        app:autoTransition="animateToEnd"
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="1000">
+
+    </Transition>
+
+    <!-- Define @id/start -->
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="322dp"
+            android:layout_height="60dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_editor_absoluteY="615dp" />
+
+        <Constraint
+            android:id="@+id/category_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+    <!-- Define @id/end -->
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/button"
+            android:layout_width="322dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:alpha="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_editor_absoluteY="616dp" />
+
+        <Constraint
+            android:id="@+id/category_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteY="16dp" />
+
+    </ConstraintSet>
+
+</MotionScene>
